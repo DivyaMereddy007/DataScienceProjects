@@ -198,7 +198,7 @@ print("Best k-value with SSE is: ",sse_diff.index(max(sse_diff)))
 # In[742]:
 
 
-#why are we adjusting the data
+
 labels_k, sc_score, error_value,kmeans = kmeans_students(nclusters[sc_diff.index(max(sc_diff))],StudentData[features])
 adjusted_labels_k = [x+1 for x in labels_k]
 #plt.show()
